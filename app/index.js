@@ -16,8 +16,8 @@ class App extends React.Component {
   render() {
     return (
       <>
-        <View>
-          <Text>HydroSimulator</Text>
+        <View style={styles.header}>
+          <Text style={styles.title}>HydroSimulator</Text>
         </View>
         <Dashboard />
       </>
@@ -25,6 +25,17 @@ class App extends React.Component {
   }
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  header: {
+    backgroundColor: '#FFFFFF',
+  },
+  title: {
+    color: '#1166EE',
+    fontSize: 24,
+    margin: 10,
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+});
 
 export default App;
